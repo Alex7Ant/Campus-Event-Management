@@ -95,6 +95,32 @@ endLine: 17
 - Protected API endpoints
 - Environment variable protection
 
+## Deployment
+
+### Live Environments
+- Production: [https://campus-event-management-chi.vercel.app](https://campus-event-management-chi.vercel.app)
+- Staging: [https://campus-event-management-chi.vercel.app](https://campus-event-management-chi.vercel.app)
+
+### Deployment Instructions
+
+1. Configure deployment environment:
+```bash
+npm run build
+```
+
+2. Deploy to Heroku:
+```bash
+heroku login
+git push heroku main
+```
+
+3. Verify deployment:
+```bash
+heroku open
+```
+
+For detailed deployment instructions, please refer to our [Deployment Guide](docs/deployment.md).
+
 ## Contributing
 
 1. Fork the repository
