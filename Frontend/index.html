@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minerva's Campus Event Management System</title>
+        <link rel="stylesheet" href="/css/home.css">
+        <script src="index.js" defer></script>
+        <script src="/js/button.js"></script>
+        <script src="/css/events.js"></script>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+            }
+
+            header {
+                background-color: #007BFF;
+                color: white;
+                padding: 1rem 0;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+                margin-top: 1rem;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 1rem;
+                transition: color 0.3s;
+            }
+
+            nav ul li a:hover {
+                color: #FFD700;
+            }
+
+            .about-section {
+                padding: 2rem;
+                text-align: center;
+                background: white;
+                margin: 2rem 1rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                font-size: 1.1rem;
+            }
+
+            .about-section h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .about-section p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                color: #555;
+            }
+
+            .events-section {
+                text-align: center;
+                padding: 2rem;
+                background-color: #f8f9fa;
+                margin-top: 2rem;
+            }
+
+            .events-section h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                color: #333;
+            }
+
+            .events {
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+            }
+
+            .event {
+                background: white;
+                padding: 1.5rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                width: 300px;
+                text-align: center;
+                transition: transform 0.3s;
+            }
+
+            .event:hover {
+                transform: scale(1.05);
+            }
+
+            .event h3 {
+                color: #007BFF;
+                font-size: 1.5rem;
+            }
+
+            .event p {
+                font-size: 1rem;
+                color: #555;
+                line-height: 1.5;
+            }
+
+            .event button {
+                margin-top: 1rem;
+                background-color: #007BFF;
+                color: white;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .event button:hover {
+                background-color: #0056b3;
+            }
+
+            .form-section {
+                padding: 2rem;
+                background-color: white;
+                margin: 2rem 1rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+
+            .form-section h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                color: #333;
+            }
+
+            .form-section form {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .form-section label {
+                font-weight: bold;
+                color: #333;
+            }
+
+            .form-section input, .form-section select, .form-section textarea {
+                padding: 0.75rem;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1rem;
+                width: 100%;
+            }
+
+            .form-section button {
+                background-color: #28a745;
+                color: white;
+                border: none;
+                padding: 0.75rem;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                width: 100%;
+            }
+
+            .form-section button:hover {
+                background-color: #218838;
+            }
+
+            footer {
+                text-align: center;
+                padding: 1rem;
+                background-color: #343a40;
+                color: white;
+                margin-top: 2rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="container-class">
+                <h1>Minerva's Campus Event Registration System</h1>
+                <nav id="nav-id">
+                    <ul id="ul-id">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+
+        <section class="about-section">
+            <h1>Who are we?</h1>
+            <p>Welcome to Minerva's Campus Event Registration System, your number one online campus event registration system in West Africa. We are a digital platform that streamlines the process of organizing, managing, and participating in campus events such as workshops, seminars, sports tournaments, and cultural activities. It enables students, staff, and event organizers to easily register for, track, and plan events, fostering community engagement and efficient event management.</p>
+        </section>
+
+        <section class="events-section">
+            <h2>Our Services</h2>
+            <div class="events">
+                <div class="event">
+                    <h3>Workshops</h3>
+                    <p>We specialize in organizing skill-enhancing workshops for students and staff. These workshops focus on technology, communication skills, and personal development, providing a great opportunity for learning and growth.</p>
+                    <button>Book an Event</button>
+                </div>
+                <div class="event">
+                    <h3>Seminars</h3>
+                    <p>Engage in insightful seminars with industry experts and academic professionals. Our seminars cover various topics from career development to advanced research techniques, aimed at expanding knowledge and fostering academic growth.</p>
+                    <button onclick="register()">Book an Event</button>
+                </div>
+                <div class="event">
+                    <h3>Club Activities</h3>
+                    <p>Participate in vibrant club activities and cultural events. From music performances to art exhibitions, our platform brings together students who share common interests and passions, fostering a sense of community and creativity.</p>
+                    <button onclick="">Book an Event</button>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="form-section">
+            <h2>Event Registration</h2>
+            <form id="event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" placeholder="Enter event name" required>
+
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <label for="event-location">Event Location:</label>
+                <input type="text" id="event-location" name="event-location" placeholder="Enter event location" required>
+
+                <button type="submit">Submit Event</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h2>Your Preferences</h2>
+            <form id="preferences-form">
+                <label for="preferred-events">Preferred Event Type:</label>
+                <select id="preferred-events" name="preferred-events" required>
+                    <option value="workshop">Workshop</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="club-activity">Club Activity</option>
+                </select>
+
+                <label for="preferred-date">Preferred Date:</label>
+                <input type="date" id="preferred-date" name="preferred-date" required>
+
+                <button type="submit">Submit Preferences</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h2>RSVP</h2>
+            <form id="rsvp-form">
+                <label for="rsvp-name">Name:</label>
+                <input type="text" id="rsvp-name" name="rsvp-name" placeholder="Enter your name" required>
+
+                <label for="rsvp-email">Email:</label>
+                <input type="email" id="rsvp-email" name="rsvp-email" placeholder="Enter your email" required>
+
+                <label for="rsvp-event">Event:</label>
+                <select id="rsvp-event" name="rsvp-event" required>
+                    <option value="workshop">Workshop</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="club-activity">Club Activity</option>
+                </select>
+
+                <button onclick="rsvp.js" type="submit">RSVP</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Minerva's Campus Event Management System. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Event Calendar</title>
+    <link rel="stylesheet" href="/css/calendar.css">
+    <script src="/js/calendar.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Campus Event Calendar</h1>
+    </header>
+
+    <section class="filter-section">
+        <h2>Filter Events</h2>
+        <label for="event-type">Event Type:</label>
+        <select id="event-type">
+            <option value="all">All</option>
+            <option value="workshop">Workshop</option>
+            <option value="seminar">Seminar</option>
+            <option value="club">Club Activity</option>
+        </select>
+    </section>
+
+    <section class="calendar-container">
+        <div class="calendar-header">
+            <button id="prev-month">&lt;</button>
+            <h2 id="calendar-title"></h2>
+            <button id="next-month">&gt;</button>
+        </div>
+        <div class="calendar-grid" id="calendar-grid"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Campus Event Calendar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
