@@ -144,7 +144,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const { body, validationResult } = require('express-validator');
-const db = require('../db');
+const db = require('../../db');
 const { generateToken } = require('../utils/auth');
 
 /**

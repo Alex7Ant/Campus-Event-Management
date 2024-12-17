@@ -1,1 +1,4 @@
-/node_modules/
+Backend/node_modules
+.vscode
+Backend/.env
+Backend/dbinfo.env
